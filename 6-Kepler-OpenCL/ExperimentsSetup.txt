@@ -1,0 +1,12 @@
+Hardware:
+  GPU: Kepler K20c
+  13 SM * 192 cores = 2496 cores total, 706MHz
+  Host:
+  2 AMD Opteron 6320 2.8GHz Eight Core processors (16 cores total) and 16GB memory
+
+Software:
+  compiler: gcc 
+  library: OpenCL
+To run:
+  make
+  ./brdr2d.exe 128 1 (128 1 means the thread block is 128X1)

@@ -1,0 +1,18 @@
+Mode of Execution on MIC:
+    Native Mode
+Hardware:
+    Intel Xeon Phi 5110P 
+    60 Cores, 1.06GHz
+    Coprocessor Stepping   : B1 
+Software:
+  targeting OpenCL (only supports OpenCL):
+	compiler: gcc 
+	library: OpenCL
+	CAPS hmpp 3.3.3 compiler
+ 	environment variables: bashrc_opencl_mic
+To run:
+  targeting OpenCL:
+	make acc_opencl
+	./brdr2d_acccl.exe 
+	(make sure the brdr2d.h is consistent with brdr2dtask.dat)
+

@@ -1,0 +1,141 @@
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Allocating memory for data array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 243, b2: 280, middley: 256 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec): 100.00
+                     dt (msec): 0.0250
+                        Nsteps:    4000.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0195
+                            Nx: 512
+                       Ly (cm): 10.00
+                       dy (cm): 0.0195
+                            Ny: 512
+        dt/[dx*dy] (msec/cm^2): 65.5360
+
+                msec per write: 1.000
+              Nsteps per write: 40
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0195
+              datafile dy (cm): 0.0195
+         datafile Nx (columns): 512
+            datafile Ny (rows): 512
+
+        Nsteps per user update: 200
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 256, 256
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.01526 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.01526 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 1.6968
+ Dp12 (msec^-1): 0.2275
+ Dp21 (msec^-1): 0.2275
+ Dp22 (msec^-1): 1.2916
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 14 
+          icbwidthn : 24 
+       iclengthactn : 435 
+     iclengthblockn : 473 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+5.0000e+00 msec, Vm(256,256): -8.64 mV
+1.0000e+01 msec, Vm(256,256): -23.79 mV
+1.5000e+01 msec, Vm(256,256): -32.92 mV
+2.0000e+01 msec, Vm(256,256): -39.93 mV
+2.5000e+01 msec, Vm(256,256): -45.86 mV
+3.0000e+01 msec, Vm(256,256): -51.21 mV
+3.5000e+01 msec, Vm(256,256): -56.17 mV
+4.0000e+01 msec, Vm(256,256): -60.81 mV
+4.5000e+01 msec, Vm(256,256): -65.12 mV
+5.0000e+01 msec, Vm(256,256): -69.09 mV
+5.5000e+01 msec, Vm(256,256): -72.64 mV
+6.0000e+01 msec, Vm(256,256): -75.75 mV
+6.5000e+01 msec, Vm(256,256): -78.39 mV
+Changing block conditions: 65.025 msec 
+7.0000e+01 msec, Vm(256,256): -80.51 mV
+7.5000e+01 msec, Vm(256,256): -82.23 mV
+8.0000e+01 msec, Vm(256,256): -83.57 mV
+8.5000e+01 msec, Vm(256,256): -84.57 mV
+9.0000e+01 msec, Vm(256,256): -85.30 mV
+9.5000e+01 msec, Vm(256,256): -85.82 mV
+1.0000e+02 msec, Vm(256,256): -86.17 mV
+CPU time is 1467.21
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 100.000 msec
+     Final time: 100.000 msec
+         Nsteps:    4000.00
+Number of steps: 4000
+             Nx: 512
+             Ny: 512

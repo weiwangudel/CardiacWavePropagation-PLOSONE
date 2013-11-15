@@ -1,0 +1,16 @@
+Mode of Execution on MIC:
+    Native Mode
+Hardware:
+    Intel Xeon Phi 5110P 
+    60 Cores, 1.06GHz
+    Coprocessor Stepping   : B1 
+Software:
+  targeting OpenCL (only supports OpenCL):
+	compiler: gcc 
+	library: OpenCL (provided in Intel Composer package with the 
+			 distribution of icc v14.0.0)
+To run:
+  targeting OpenCL:
+	make acc_opencl
+	./brdr2d_acccl.exe 128 1 
+

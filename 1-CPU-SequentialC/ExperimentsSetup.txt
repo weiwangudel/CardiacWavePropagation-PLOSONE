@@ -1,0 +1,9 @@
+Hardware:
+    Intel Xeon E5530 
+    2 Intel Xeon E5530 2.4 GHz, 8MB cache, 5.86GT/sec QPI Quad core Nehalem 
+processors (8 cores per node) and 24GB DDR3-1066 Reg ECC memory.    
+Software:
+    Compiler: gcc 4.1.2
+    Optimization flag: -O3 
+Results:
+    The results we obtained are provided in results/ directory

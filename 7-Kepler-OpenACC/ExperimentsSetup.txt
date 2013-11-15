@@ -1,0 +1,24 @@
+Hardware:
+  GPU: Kepler K20c
+  13 SM * 192 cores = 2496 cores total, 706MHz
+  Host:
+  2 AMD Opteron 6320 2.8GHz Eight Core processors (16 cores total) and 16GB memory
+
+Software:
+  targeting OpenCL:
+	compiler: gcc 
+	library: OpenCL
+	CAPS hmpp 3.3.3 compiler
+ 	environment variables: bashrc_opencl
+  targeting CUDA:
+	compiler: nvcc from CUDA 5.0
+ 	CAPS hmpp 3.3.3 compiler
+	environment variable: bashrc_cuda
+To run:
+  targeting OpenCL:
+	make acc_opencl
+	./brdr2d_acccl.exe (make sure the brdr2d.h is consistent with brdr2dtask.dat)
+  target CUDA:
+	make acc_cuda
+	./brdr2d_acccuda.exe 
+

@@ -1,0 +1,20 @@
+Mode of Execution on MIC:
+    Native Mode
+Hardware:
+    Intel Xeon Phi 5110P 
+    60 Cores, 1.06GHz
+    Coprocessor Stepping   : B1 
+Software:
+    Compiler: Intel icc 14.0.0 (gcc version 4.4.7 compatibility) 2013-07-28
+    Optimization flag: -O3 
+Results:
+    The results we obtained are provided in results/ directory
+    Note that each subfolder of the results folder contains the results of 
+multiple runs. Please choose any one output to compare.
+To Run:
+    1) select the input and associated code directory
+    2) make 
+    3) copy the executable to MIC card
+    4) copy the input file to MIC card
+    5) create the data/ directory on MIC card (same directory as the executable)
+    

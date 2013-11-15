@@ -1,0 +1,82 @@
+/* Contants for BR 2D Model */
+/* watanabe5: dt=0.03 msec; dx=0.0125 cm  */
+100        tfinal  (msec) 
+0.025      dt      (msec)  0.025
+10.0        Lx      (cm) 10
+256         Nx      (unitless integer) 400
+10.0        Ly      (cm)
+256         Ny      (unitless integer)
+0.35	   gK1     (mmho/cm^2)
+15.0	   gNa     (mmho/cm^2) 15.0
+40.0	   ENa     (mV)
+0.8	   gx1     (mmho/cm^2)
+0.09       gs      (mmho/cm^2) 0.09
+1.0	   Cm      (uF/cm^2)
+0.07       kCa     (msec^-1)
+0.0        gNaC    (mmho/cm^2)  No gNaC in BRDR!
+0.00076    Dpara   (cm^2/msec)  0.00076 might be most accurate for ventricular tissue (fast2). Rick uses 0.0006, Courtemanche3 used 0.001
+0.00038    Dperpen (cm^2/msec)
+33.0       theta   (degrees)
+0.60       sigma   (unitless) time constant multiplier for Ca+2 current gates d & f
+1.0        A       (unitless) multiplier for potassium current (IK1).
+
+/* Initial Conditions for BR Model */
+/*                                 */
+-80          Vm	(mV)
+2.0e-07	     Cai    (mole/L)
+1            ic type (0 for normal ics, 1 for spiral ics, 2 for read from file br2dfc.dat)
+
+/* Block stuff */
+/*             */
+0.25      ic bar width excited (cm)
+0.45      ic bar width passive block (cm)
+8.50      ic excited length (cm)
+9.25      ic passive block length (cm)
+1         number of block times
+65.0      block times (msec)  off,on,off,on,etc...  46
+
+/* Stimuli */
+/*         */
+0       number of stimulus applications, 0 for none (ie: number of times)
+70      stimulus amplitude (uA/cm^2)
+0.5     stimulus interval (msec)
+0.05    stimsize1, stimulus size (cm). ie: radius of point stimulus or length of line stimulus
+0.5     stimsize2, stimulus size (cm). ie: width of bar stimulus. Required but not used for point and line stimuli.
+10000   stimulus times (msec)  use 138 for sigma=0.67     1 100
+
+/* write to datafiles          */
+/*                             */
+1.0      msecW       msec per write to datafiles
+1.0      wdN         spatial sampling in x and y direction
+
+/* Update user on simulation progress every msecRP msec  */
+/*                                                       */
+5   msecRP      (msec)
+-2  mNx         x index of node to monitor [1 for first, -1 for last, -2 for middle, otherwise anything b/w 1 and Nx]
+-2  mNy         y index of node to monitor [1 for first, -1 for last, -2 for middle, otherwise anything b/w 1 and Ny]
+
+/* Boundary Conditions  */
+/* 1=slab, 2=cylinder   */
+1                       BC       (Flag)
+
+/* Field files */
+/* 1=read associated field data from file, 0=do not read associated field data */
+0   A: IK1 multiplier. filename is "A.field"
+
+/* Data to save to disk  */
+/* 0=do not write to disk, 1=write to disk   */
+1   0-Vm
+0   1-dVmdt
+0   2-IK1
+0   3-Ix1
+0   4-x1
+0   5-INa
+0   6-m
+0   7-h
+0   8-Is
+0   9-d
+0   10-f
+0   11-Cai
+0   12-Isum
+0   13-Diff
+

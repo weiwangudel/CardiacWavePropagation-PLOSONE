@@ -1,0 +1,16 @@
+Hardware:
+  host:
+    Intel Xeon E5530 
+    2 Intel Xeon E5530 2.4 GHz, 8MB cache, 5.86GT/sec QPI Quad core Nehalem 
+processors (8 cores per node) and 24GB DDR3-1066 Reg ECC memory.    
+  GPU:
+    Fermi C2050
+    14 sm X 32 cores = 448 cores total , clocked at 1.15GHz
+Software:
+    Compiler: nvcc from CUDA 5.0
+    Optimization flag: -O3 
+To run:
+    make
+    ./brdr2d.exe 128 1    (128 1 means the block size is 128X1)
+Results:
+    The results we obtained are provided in results/ directory

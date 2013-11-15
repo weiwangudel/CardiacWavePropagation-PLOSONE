@@ -1,0 +1,8 @@
+export OPENCL_INC_PATH=/opt/intel/opencl/include
+export HMPPRT_OPENCL_DEVICE_TYPE=CL_DEVICE_TYPE_GPU
+export HMPPRT_NO_FALLBACK=1
+export ACC_DEVICE_TYPE=acc_device_opencl
+export GPU_USE_SYNC_OBJECTS=1
+source /path/to/CAPSCompilers-3.3.3/bin/hmpp-env.sh
+#export HMPPRT_LOG_LEVEL=INFO
+
